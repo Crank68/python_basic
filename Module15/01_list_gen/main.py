@@ -1,4 +1,4 @@
 print('Введите челое число:')
-N = int(input())  # TODO имена переменных пишутся маленькими буквами
-new_list = list(range(1, N + 1, 2))
-print(new_list)  # TODO В конце модуля оставляйте одну пустую строку
+n = int(input())
+new_list = list(range(1, n + 1, 2))
+print(new_list)
