@@ -4,4 +4,4 @@ for symbol in word:
     if word.count(symbol) == 1:
         count +=1
 
-print('Кол-во уникальных символов:', count)
+print('Кол-во уникальных символов:', count) # TODO Аналогично предыдущему
