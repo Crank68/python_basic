@@ -12,10 +12,6 @@ violator_songs = [
 
 count_songs = int(input('Сколько песен выбрать: '))
 songs_list = [input(f'Название {number} песни: ') for number in range(1, count_songs + 1)]
-count_time = 0
+count_time = round(sum([i_elem[1] for i_elem in violator_songs if i_elem[0] in songs_list]), 2)
 
-for i_elem in violator_songs:
-    if i_elem[0] in songs_list:
-        count_time += i_elem[1]
-
-print(f'\nОбщее время звучания песен: {round(count_time, 2)} минут')
+print(f'\nОбщее время звучания песен: {count_time} минут')
