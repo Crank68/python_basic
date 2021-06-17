@@ -5,6 +5,10 @@ i_max = len(russian_alphabet) - 1
 len_alp = len(russian_alphabet)
 forbidden_symbols = '!., '  # Это список нужно расширить.
 
+a = 5
+b = 6
+
+a,b = b,a
 
 new_text = [russian_alphabet[russian_alphabet.index(symbol) + shift
             if russian_alphabet.index(symbol) + shift <= i_max
