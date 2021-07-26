@@ -1,6 +1,4 @@
-result = max(input('Строка: ').split())
+words = input('Строка: ').split()
+len_words = [len(elem) for elem in words]
+result = words[len_words.index(max(len_words))]
 print('Самое длиное слово: ', result)
-# TODO проверяли работу? max находит не самую длинную, а самую "старшую" (при сортировке)
-# TODO Пример:
-# Строка: папа сын
-# Самое длиное слово:  сын
