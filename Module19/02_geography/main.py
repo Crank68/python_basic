@@ -8,7 +8,7 @@ for number in range(1, country_count + 1):
 for count in range(1, 4):
     city = input(f'{count} город: ')
     result = country.get(city)
-    if result == None:
+    if result == None:  # TODO для сравнения с None используйте только is
         print(f'По городу {city} данных нет.')
     else:
         print(f'Город {city} распологается в стране {result}')
