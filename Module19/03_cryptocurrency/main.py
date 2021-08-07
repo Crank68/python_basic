@@ -44,5 +44,20 @@ data = {
     ]
 }
 
+# Первая часть задания. Только для первого порядка же?
+for key, value in data.items():
+    print(f'Ключ - {key}\nЗначение - {value}')
 
-# TODO здесь писать код
+# 2.
+data['ETH']['total_diff'] = 100
+
+# 3.
+data['tokens'][0]['fst_token_info']['name'] = 'doge'
+
+# 4.
+first_out = data['tokens'][0].pop('total_out')
+second_out = data['tokens'][1].pop('total_out')
+data['ETH']['totalOut'] = first_out + second_out
+
+# 5.
+data['tokens'][1]['sec_token_info']['total_price'] = data['tokens'][1]['sec_token_info'].pop('price')
